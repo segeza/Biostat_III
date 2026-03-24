@@ -24,6 +24,18 @@ library(broom.mixed) # for obtaining confidence intervals from GLME models
 library(GLMMadaptive) # more GLME modelling (extensions)
 library(missForest) # to randomly generate some missing data
 
+pacman::p_load(
+  tidyverse,
+  geepack,
+  broom,
+  nlme,
+  lme4,
+  broom.mixed,
+  GLMMadaptive,
+  missForest
+  )
+
+
 # remember not all of these packages are essential for every instance of fitting models for clustered/longitudinal data analysis 
 
 # Set working directory
@@ -34,7 +46,7 @@ getwd()
 
 #### Understanding the data ####
 # Read in the data 
-stroke_wide <- read.csv("stroke.csv", header = T)
+stroke_wide <- read.csv("workshop_2/stroke.csv", header = T)
 
 # first 6 rows
 head(stroke_wide)
