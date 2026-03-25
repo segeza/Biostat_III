@@ -25,14 +25,14 @@ library(GLMMadaptive) # more GLME modelling (extensions)
 library(missForest) # to randomly generate some missing data
 
 pacman::p_load(
-  tidyverse,
-  geepack,
-  broom,
-  nlme,
-  lme4,
-  broom.mixed,
-  GLMMadaptive,
-  missForest
+  tidyverse, # for data manipulation and visualisation 
+  geepack, # for GEE modelling 
+  broom, # for obtaining confidence intervals from GEE models 
+  nlme, # for LME modelling
+  lme4, # for GLME modelling
+  broom.mixed, # for obtaining confidence intervals from GLME models
+  GLMMadaptive, # more GLME modelling (extensions)
+  missForest # to randomly generate some missing data
   )
 
 
